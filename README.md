@@ -6,49 +6,47 @@
 # 🧠 How It Works
 The detection process is executed in three distinct phases:
 
-Authentication: Initial verification of card details and user identity.
+**Authentication:** Initial verification of card details and user identity.
 
-Behavioral Analysis: Uses Fuzzy C-Means Clustering to find normal usage patterns based on past activity. A "suspicion score" is calculated based on how much a transaction deviates from these patterns.
+**Behavioral Analysis:** Uses Fuzzy C-Means Clustering to find normal usage patterns based on past activity. A "suspicion score" is calculated based on how much a transaction deviates from these patterns.
 
-Learning Phase: Suspicious transactions are passed to a Neural Network to determine if they are truly fraudulent or just an occasional deviation by a genuine user.
+**Learning Phase:** Suspicious transactions are passed to a Neural Network to determine if they are truly fraudulent or just an occasional deviation by a genuine user.
 
 # 🛠️ Tech StackLanguage: 
 
-Python Framework: Django (for web integration) 
+**Python Framework:** Django (for web integration) 
 
-Database: MySQL 
+**Database:** MySQL 
 
-Design: HTML, CSS, JavaScript 
+**Design:** HTML, CSS, JavaScript 
 
-Environment: MATLAB-2014 (used for core simulation and results) 
+**Environment:** MATLAB-2014 (used for core simulation and results) 
 
 ## 🚀 How to Run (Step-by-Step guide)
 To get this project running on your own computer, follow these four simple steps:
 
-1. Prepare the Database
-This project uses MySQL to store and manage transaction data.
+**1. Prepare the Database**
+* This project uses MySQL to store and manage transaction data.
 
-Open your MySQL tool (like XAMPP, WAMP, or MySQL Workbench).
+* Open your MySQL tool (like XAMPP, WAMP, or MySQL Workbench).
 
-Create a new database named fraud_detection.
+* Create a new database named `fraud_detection`.
 
-If you have a .sql file in your project, import it into this new database.
+ If you have a `.sql` file in your project, import it into this new database.
 
-2. Install the Dependencies
+**2. Install the Dependencies**
 You need to install the Python libraries listed in your requirements.txt file so the code can "talk" to the database and run the math models. Open your terminal in the project folder and run:
 
-Bash
-pip install -r requirements.txt
+`pip install -r requirements.txt`
 
-3. Start the Web Server
+**3. Start the Web Server**
 This project uses Django to create the website interface. To start it up, type this in your terminal:
 
-Bash
-python manage.py runserver
+`python manage.py runserver`
 
-4. View the Project
+**4. View the Project**
 Open your web browser (Chrome, Edge, etc.) and go to this address:
-http://127.0.0.1:8000/
+`http://127.0.0.1:8000/`
 
 ## 📊 Dataset
 The dataset used for this project is too large for GitHub. You can download it here: 
@@ -59,14 +57,20 @@ Once downloaded, place the file in the `/dataset` folder.
 
 # 📸 System Preview
 
-Phase 1: Secure Authentication
+ **Phase 1:** Secure Authentication
 The system begins with a secure login to verify the cardholder's identity.
 
-Phase 2: Transaction Monitoring
+![Login Screen](results/login.png)
+
+**Phase 2:** Transaction Monitoring
 Every transaction is passed through the Fuzzy C-Means logic to check for behavioral deviations.
 
-Phase 3: Fraud Detection Results
+![System Dashboard](results/dashboard.png)
+
+**Phase 3:** Fraud Detection Results
 When a transaction exceeds the "Suspicion Score," the Neural Network flags it.
+
+![Fraud Alert](results/alert.jpg)
 
 ## 📊 Results & Performance
 The system was evaluated based on its ability to distinguish between genuine transactions and fraudulent ones.
