@@ -60,17 +60,17 @@ Once downloaded, place the file in the `/dataset` folder.
  **Phase 1:** Secure Authentication
 The system begins with a secure login to verify the cardholder's identity.
 
-![Login Screen](results/login.png)
+![Login Screen](Results/login.png)
 
 **Phase 2:** Transaction Monitoring
 Every transaction is passed through the Fuzzy C-Means logic to check for behavioral deviations.
 
-![System Dashboard](results/dashboard.png)
+![System Dashboard](Results/dashboard.png)
 
 **Phase 3:** Fraud Detection Results
 When a transaction exceeds the "Suspicion Score," the Neural Network flags it.
 
-![Fraud Alert](results/alert.jpg)
+![Fraud Alert](Results/alert.jpg)
 
 ## 📊 Results & Performance
 The system was evaluated based on its ability to distinguish between genuine transactions and fraudulent ones.
