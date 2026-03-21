@@ -1,9 +1,9 @@
-# 💳 Credit Card Fraud Detection using Hidden Markov Model
+#  Credit Card Fraud Detection using Hidden Markov Model
 
  # Overview
  This project implements a multi-layered system designed to detect fraudulent credit card transactions by combining Fuzzy C-Means (FCM) Clustering and Neural Networks. The system aims to identify suspicious spending behaviors while significantly reducing the rate of false alarms.
 
-# 🧠 How It Works
+#  How It Works
 The detection process is executed in three distinct phases:
 
 **Authentication:** Initial verification of card details and user identity.
@@ -12,7 +12,7 @@ The detection process is executed in three distinct phases:
 
 **Learning Phase:** Suspicious transactions are passed to a Neural Network to determine if they are truly fraudulent or just an occasional deviation by a genuine user.
 
-# 🛠️ Tech StackLanguage: 
+#  Tech StackLanguage: 
 
 **Python Framework:** Django (for web integration) 
 
@@ -22,7 +22,7 @@ The detection process is executed in three distinct phases:
 
 **Environment:** MATLAB-2014 (used for core simulation and results) 
 
-## 🚀 How to Run (Step-by-Step guide)
+##  How to Run (Step-by-Step guide)
 To get this project running on your own computer, follow these four simple steps:
 
 **1. Prepare the Database**
@@ -48,14 +48,14 @@ This project uses Django to create the website interface. To start it up, type t
 Open your web browser (Chrome, Edge, etc.) and go to this address:
 `http://127.0.0.1:8000/`
 
-## 📊 Dataset
+##  Dataset
 The dataset used for this project is too large for GitHub. You can download it here: 
 
 https://drive.google.com/file/d/18N1rzgXZ-CweeKU89BdI19ObF5BcFW1e/view?usp=sharing
 
 Once downloaded, place the file in the `/dataset` folder.
 
-# 📸 System Preview
+#  System Preview
 
 **Phase 1:** Dataset Initialization
 This phase shows the raw dataset being loaded and normalized. We split the data into 227,451 training records and 56,962 testing records. Normalization ensures that features with different scales (like 'Amount') do not dominate the model training.
@@ -71,7 +71,7 @@ Here, we train the Fuzzy C-Means logic and the Neural Network. This graph monito
 
 ![Class Distribution](Results/traininggraph.png)
 
-## 📊 Results & Performance
+##  Results & Performance
 The system was evaluated based on its ability to distinguish between genuine transactions and fraudulent ones.
 
 ### Accuracy and Metrics
